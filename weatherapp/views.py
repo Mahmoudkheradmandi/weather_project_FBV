@@ -6,7 +6,7 @@ from .forms import CityForm
 
 
 def index(request):
-    url = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=imperial&appid=8a2e5b5a178c85c8c41e7ceba8c5bc8a'
+    url = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=imperial&appid={API_KEY}'
 
     cities = City.objects.all()
     
